@@ -70,3 +70,5 @@ for partido in fixturegeneral:
              partido[3][:4])
        print("Estadio:",partido[2])
        print("Hora:", partido[4])
+       
+#Ya esta bien, profe santiago no hizo nada :v
