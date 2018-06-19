@@ -60,20 +60,20 @@ fixturegeneral=[
 equipo1= input("Ingrese el nombre del 1er equipo:")
 equipo2= input("Ingrese el nombre del 2do equipo:")
 x=0
-for partido in fixturegeneral:
-   if equipo1.upper() in partido and \
-           equipo2.upper() in partido and \
-           equipo1.upper() != equipo2.upper():
-       print("Fecha:",
-             partido[3][6:],"/",
-             partido[3][4:6],"/",
-             partido[3][:4])
-       print("Estadio:",partido[2])
-       print("Hora:", partido[4])
-   else:
-       x=x+1
-if x==48:
-       print("El partido no existe")
+def fixture(equipo1,equipo2,x):
+    for partido in fixturegeneral:
+       if equipo1.upper() in partido and \
+               equipo2.upper() in partido and \
+               equipo1.upper() != equipo2.upper():
+           print("Fecha:",
+                partido[3][6:],"/",
+                partido[3][4:6],"/",
+                partido[3][:4])
+           print("Estadio:",partido[2])
+           print("Hora:", partido[4])
+       else:
+           x=x+1
+    if x==48:
+           print("El partido no existe")
 
-#Ya esta bien
-#Profe, Santiago no hizo nada :v
+fixture(equipo1,equipo2,x)
