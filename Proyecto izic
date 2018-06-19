@@ -48,7 +48,7 @@ fixturegeneral=[
    ["INGLATERRA","PANAMA","ESTADIO DE NIZHNI NOVGOROD, NIZHNI NOVGOROD","20180624","7:00am"],
    ["INGLATERRA","BELGICA","ESTADIO DE KALININGRADO,KALININGRADO","20180628","1:00pm"],
    ["PANAMA","TUNEZ","MORDOVIA ARENA, SARANSK","20180628","1:00pm"],
-  
+
    ["COLOMBIA","JAPON","MORDOVIA ARENA, SARANSK","20180619","7:00am"],
    ["POLONIA","SENEGAL","ESTADIO OLIMPICO LUZNHIKI, MOSCU","20180619","10:00am"],
    ["JAPON","SENEGAL","EKATERIMBURGO ARENA, EKATERIMBURGO","20180624","10:00am"],
@@ -59,7 +59,7 @@ fixturegeneral=[
 
 equipo1= input("Ingrese el nombre del 1er equipo:")
 equipo2= input("Ingrese el nombre del 2do equipo:")
-
+x=0
 for partido in fixturegeneral:
    if equipo1.upper() in partido and \
            equipo2.upper() in partido and \
@@ -70,9 +70,10 @@ for partido in fixturegeneral:
              partido[3][:4])
        print("Estadio:",partido[2])
        print("Hora:", partido[4])
-else:
-        print("el partido no existe")
+   else:
+       x=x+1
+if x==48:
+       print("El partido no existe")
 
 #Ya esta bien
 #Profe, Santiago no hizo nada :v
-
