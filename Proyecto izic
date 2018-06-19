@@ -70,10 +70,8 @@ for partido in fixturegeneral:
              partido[3][:4])
        print("Estadio:",partido[2])
        print("Hora:", partido[4])
-   else:
-       x=1
-if x==1:
-       print("El partido no existe")
+else:
+        print("el partido no existe")
 
 #Ya esta bien
 #Profe, Santiago no hizo nada :v
